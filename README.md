@@ -1,4 +1,4 @@
-# dice-calc-examples
+# dice-pool-calc-examples
 
 Usage examples for the library [dice-pool-calc](https://github.com/KosRud/dice-pool-calc).
 
