@@ -13,17 +13,13 @@
     "tsc-alias": "^1.8.7",
     "typescript": "^5.1.6"
   },
-  "dependencies": {
-    "dice-pool-calc": "^0.0.9"
-  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rimraf -g ./build/* && rimraf -g ./docs/* && rimraf -g ./docs/.*",
-    "doc": "typedoc",
-    "build": "rimraf -g ./build/* && tsc && tsc-alias && ncp ./package.json ./build/package.json",
-    "start": "node ./build/index.js",
+    "build": "rimraf -g ./build/* && tsc && tsc-alias",
     "build:watch": "concurrently --kill-others \"tsc -w\" \"tsc-alias -w\"",
-    "doc:watch": "nodemon --exec \"npm run doc\" --watch ./src --ext js,ts",
-    "nodemon": "concurrently --kill-others \"npm run build:watch\" \"nodemon ./build/main.js\""
+    "update-import": "npx pnpm remove dice-pool-calc && npx pnpm add dice-pool-calc"
+  },
+  "dependencies": {
+    "dice-pool-calc": "^0.0.10"
   }
 }
