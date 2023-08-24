@@ -14,7 +14,7 @@
     "typescript": "^5.1.6"
   },
   "dependencies": {
-    "dice-pool-calc": "^0.0.8"
+    "dice-pool-calc": "^0.0.9"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

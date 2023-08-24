@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   dice-pool-calc:
-    specifier: ^0.0.8
-    version: 0.0.8
+    specifier: ^0.0.9
+    version: 0.0.9
 
 devDependencies:
   '@types/node':
@@ -598,8 +598,8 @@ packages:
       object-keys: 1.1.1
     dev: true
 
-  /dice-pool-calc@0.0.8:
-    resolution: {integrity: sha512-gNBX706xkJ11AwTmDxFIkRrhevI/Pu9rtHvcmelEsyWsSJ+6oWqvR0h8hkC6slEPT9qi7wqEVStwGDgJlGmwhw==}
+  /dice-pool-calc@0.0.9:
+    resolution: {integrity: sha512-L/nmLDPniDeCjsxDnHt7TEFscii2997IZpkp2fI+oPI8lHSHFLg/X0gv7Kns3DAwG0fwMHNuhP5fskTpQo8B+A==}
     dependencies:
       deepcopy: 2.1.0
       fast-deep-equal: 3.1.3
