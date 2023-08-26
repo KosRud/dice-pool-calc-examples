@@ -8,6 +8,9 @@ dependencies:
   dice-pool-calc:
     specifier: ^0.0.10
     version: 0.0.10
+  immutable:
+    specifier: 5.0.0-beta.2
+    version: 5.0.0-beta.2
 
 devDependencies:
   '@types/node':
@@ -1178,6 +1181,10 @@ packages:
     resolution: {integrity: sha512-MAb38BcSbH0eHNBxn7ql2NH/kX33OkB3lZ1BNdh7ENeRChHTYsTvWrMubiIAMNS2llXEEgZ1MUOBtXChP3kaFQ==}
     engines: {node: '>= 4'}
     dev: true
+
+  /immutable@5.0.0-beta.2:
+    resolution: {integrity: sha512-3v1xnTlom9D2ssrEvcfFHtipjXgmZeNtximyvNyuK2eAWKWWFtfh+9w+VOVujkBSbgpjrYsS55yuWE1E5ES7IA==}
+    dev: false
 
   /import-fresh@3.3.0:
     resolution: {integrity: sha512-veYYhQa+D1QBKznvhUHxb8faxlrwUnxseDAbAp457E0wLNio2bOSKnjYDhMj+YiAq61xrMGhQk9iXVk5FzgQMw==}

@@ -1,5 +1,5 @@
 import * as stats from "dice-pool-calc/stats";
-import { d, interpret, pair } from "dice-pool-calc";
+import { Die } from "dice-pool-calc";
 
 /*
   Each player rolls d20+mod
@@ -9,15 +9,13 @@ import { d, interpret, pair } from "dice-pool-calc";
 const attackerMod = 3;
 const defenderMod = 5;
 
-const d20 = d(20);
-const attackerRoll = interpret((value) => value + attackerMod, d20);
-const defenderRoll = interpret((value) => value + defenderMod, d20);
+const d20 = Die.d(20);
+const attackerRoll = d20.interpret((outcome) => outcome + attackerMod);
+const defenderRoll = d20.interpret((outcome) => outcome + defenderMod);
 
 const combineOpposed = (att: number, def: number) => (att > def ? 1 : 0);
+const opposed = Die.pair(combineOpposed, attackerRoll, defenderRoll);
 
-const opposed = pair(combineOpposed, attackerRoll, defenderRoll);
-
-const frequencies = stats.frequencies(opposed);
 const average = stats.average(opposed);
 
-console.log({ frequencies, average });
+console.log({ outcomes: opposed.outcomes, average });

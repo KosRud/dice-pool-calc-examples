@@ -1,17 +1,15 @@
 import * as stats from "dice-pool-calc/stats";
-import { nd, pool } from "dice-pool-calc";
+import { Die } from "dice-pool-calc";
 
 // 3d4 + 2d6 + 1d8
 
-const sumDice = (accumulator: number, dieValue: number) =>
-  accumulator + dieValue;
+const sumDice = (accumulator: number, outcome: number) => accumulator + outcome;
 
-const dice = nd(3, 4).concat(nd(2, 6), nd(1, 8));
+const dice = Die.nd(3, 4).concat(Die.nd(2, 6), Die.nd(1, 8));
 
-const sumPool = pool(sumDice, 0, dice);
+const sumPool = Die.pool(sumDice, 0, dice);
 
-const frequencies = stats.frequencies(sumPool);
 const average = stats.average(sumPool);
 const median = stats.median(sumPool);
 
-console.log({ frequencies, average, median });
+console.log({ outcomes: sumPool.outcomes.toJSON(), average, median });
