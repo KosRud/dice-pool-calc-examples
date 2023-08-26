@@ -6,8 +6,11 @@ settings:
 
 dependencies:
   dice-pool-calc:
-    specifier: ^0.0.10
-    version: 0.0.10
+    specifier: 1.0.0-alpha.0
+    version: 1.0.0-alpha.0
+  immutable:
+    specifier: 5.0.0-beta.2
+    version: 5.0.0-beta.2
 
 devDependencies:
   '@types/node':
@@ -598,11 +601,12 @@ packages:
       object-keys: 1.1.1
     dev: true
 
-  /dice-pool-calc@0.0.10:
-    resolution: {integrity: sha512-HsSsQSZhDPUAbS81M7yAPHlhS8+6PXWAY2u0YLuSblcvJlaYdI/ReTCL4vAH9VPrAdaifqYiBGXK+Cwoy+oYUA==}
+  /dice-pool-calc@1.0.0-alpha.0:
+    resolution: {integrity: sha512-G33tY7xgWIU9UshjkFqxvEk5j8GgqAcLISNAuZ725oerMe8uwcun2+JuGH3QXszczY6pFWl4Ojpszq68ikaDfQ==}
     dependencies:
       deepcopy: 2.1.0
       fast-deep-equal: 3.1.3
+      immutable: 5.0.0-beta.2
     dev: false
 
   /dir-glob@3.0.1:
@@ -1178,6 +1182,10 @@ packages:
     resolution: {integrity: sha512-MAb38BcSbH0eHNBxn7ql2NH/kX33OkB3lZ1BNdh7ENeRChHTYsTvWrMubiIAMNS2llXEEgZ1MUOBtXChP3kaFQ==}
     engines: {node: '>= 4'}
     dev: true
+
+  /immutable@5.0.0-beta.2:
+    resolution: {integrity: sha512-3v1xnTlom9D2ssrEvcfFHtipjXgmZeNtximyvNyuK2eAWKWWFtfh+9w+VOVujkBSbgpjrYsS55yuWE1E5ES7IA==}
+    dev: false
 
   /import-fresh@3.3.0:
     resolution: {integrity: sha512-veYYhQa+D1QBKznvhUHxb8faxlrwUnxseDAbAp457E0wLNio2bOSKnjYDhMj+YiAq61xrMGhQk9iXVk5FzgQMw==}
