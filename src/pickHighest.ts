@@ -5,8 +5,10 @@ import { List } from "immutable";
 // highest 4 from 8d6
 
 const saveHighest4 = (accumulator: List<number>, outcome: number) => {
-  const numDice = 1;
+  const numDice = 4;
 
+  // Inserting a value in a sorted sequence can be done more efficiently.
+  // This is kept simple for the sake of example.
   const result = accumulator.push(outcome).sort((a, b) => a - b);
 
   if (result.count() <= numDice) {
