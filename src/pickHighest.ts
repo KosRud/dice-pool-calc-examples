@@ -5,7 +5,7 @@ import { List } from "immutable";
 // highest 4 from 8d6
 
 const saveHighest4 = (accumulator: List<number>, outcome: number) => {
-  const numDice = 4;
+  const numDice = 1;
 
   const result = accumulator.push(outcome).sort((a, b) => a - b);
 
@@ -20,11 +20,11 @@ const saveHighest4 = (accumulator: List<number>, outcome: number) => {
 const highest4 = Die.pool(saveHighest4, List(), Die.nd(8, 6));
 
 // sum of highest 4
-const sumHighest4 = highest4.interpret((dieValue) =>
-  dieValue.reduce((a, b) => a + b, 0)
+const sumHighest4 = highest4.interpret((outcome) =>
+  outcome.reduce((a, b) => a + b, 0)
 );
 
 const average = stats.average(sumHighest4);
 const median = stats.median(sumHighest4);
 
-console.log({ outcomes: sumHighest4, average, median });
+console.log({ outcomes: sumHighest4.outcomes.toJS(), average, median });

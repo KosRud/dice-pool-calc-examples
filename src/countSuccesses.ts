@@ -15,4 +15,4 @@ const successPool = Die.pool(countSuccess, 0, Die.nd(12, 6));
 const average = stats.average(successPool);
 const median = stats.median(successPool);
 
-console.log({ outcomes: successPool.outcomes, average, median });
+console.log({ outcomes: successPool.outcomes.toJS(), average, median });

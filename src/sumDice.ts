@@ -12,4 +12,4 @@ const sumPool = Die.pool(sumDice, 0, dice);
 const average = stats.average(sumPool);
 const median = stats.median(sumPool);
 
-console.log({ outcomes: sumPool.outcomes.toJSON(), average, median });
+console.log({ outcomes: sumPool.outcomes.toJS(), average, median });

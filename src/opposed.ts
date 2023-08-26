@@ -18,4 +18,4 @@ const opposed = Die.pair(combineOpposed, attackerRoll, defenderRoll);
 
 const average = stats.average(opposed);
 
-console.log({ outcomes: opposed.outcomes, average });
+console.log({ outcomes: opposed.outcomes.toJS(), average });
