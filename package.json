@@ -20,7 +20,7 @@
     "update-import": "npx pnpm remove dice-pool-calc && npx pnpm add dice-pool-calc"
   },
   "dependencies": {
-    "dice-pool-calc": "1.0.0-alpha.0",
+    "dice-pool-calc": "1.0.0-alpha.1",
     "immutable": "5.0.0-beta.2"
   }
 }

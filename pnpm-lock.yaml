@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   dice-pool-calc:
-    specifier: 1.0.0-alpha.0
-    version: 1.0.0-alpha.0
+    specifier: 1.0.0-alpha.1
+    version: 1.0.0-alpha.1
   immutable:
     specifier: 5.0.0-beta.2
     version: 5.0.0-beta.2
@@ -601,8 +601,8 @@ packages:
       object-keys: 1.1.1
     dev: true
 
-  /dice-pool-calc@1.0.0-alpha.0:
-    resolution: {integrity: sha512-G33tY7xgWIU9UshjkFqxvEk5j8GgqAcLISNAuZ725oerMe8uwcun2+JuGH3QXszczY6pFWl4Ojpszq68ikaDfQ==}
+  /dice-pool-calc@1.0.0-alpha.1:
+    resolution: {integrity: sha512-K48CITOW1KjfC2JajEnGN5yFGKCOIntllaa25KOBun/wik+XNmClIqpp9EEwV6A/aGURKSEDhuCq8kB6uKkqTA==}
     dependencies:
       deepcopy: 2.1.0
       fast-deep-equal: 3.1.3
